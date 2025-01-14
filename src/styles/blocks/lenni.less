@@ -1,0 +1,49 @@
+.lenni{
+    &__container{
+        .container();
+    }
+    &__part1{
+        margin: 100px 0 100px;
+        &-text{
+            color: @black;
+            font-family: @font2;
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 58px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &-img{
+            width: 100%;
+        }
+    }
+    &__part2{
+        margin-top: 100px;
+        margin-bottom: 208px;
+        &-text{
+            color: @black;
+            font-family: @font2;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 2%;
+            text-align: center;
+            text-transform: uppercase;
+            margin-left: 30px;
+        }
+        &-btns{
+            width: 624px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.part2__btn-event{
+    color: @white;
+    background-color: @red;
+    border: 1px solid @red;
+}
+
