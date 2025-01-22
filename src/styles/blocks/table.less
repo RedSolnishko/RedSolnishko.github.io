@@ -3,21 +3,62 @@
     border-collapse: collapse;
     color: @black;
     text-align: center;
+    
+    @media @bw768{
+      display: block;
+    }
+
+    &__head,
+    &__body,
+    &__footer{
+      @media @bw768{
+        display: block;
+      }
+    }
+
+    &__head-tr{
+      @media @bw768{
+        display: flex;
+      }
+    }
+
     &__tr {
       &:nth-child(2n-1) {
         background-color: fade(@black, 3%);
       }
+      @media @bw768{
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
+
     &__th {
       height: 85px;
       font-weight: 600;
       font-size: 18px;
       line-height: 25px;
+
+      @media @bw768{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.333%;
+        height: auto;
+      }
+
+      &:first-child {
+        @media @bw768{
+          display: none;
+        }
+      }
     }
+
     &__footer-th {
       height: 60px;
       font-size: 0;
     }
+
     &__th,
     &__footer-th {
       box-sizing: border-box;
@@ -31,7 +72,13 @@
         border-right: none;
         padding-right: 0;
       }
+      &:nth-child(2){
+      }
+      &:nth-child(2n-1){
+      }
+
     }
+
     &__body-th {
       box-sizing: border-box;
       height: 50px;
@@ -42,7 +89,15 @@
       font-size: 18px;
       line-height: 25px;
       text-align: left;
+
+      @media @bw768{
+        width: 100%;
+        min-height: 50px;
+        height: auto;
+        text-align: center;
+      }
     }
+
     &__td {
       box-sizing: border-box;
       height: 50px;
@@ -51,7 +106,11 @@
       font-weight: 600;
       font-size: 16px;
       line-height: 22px;
-  
+      
+      @media @bw768{
+        
+      }
+
       &:last-child {
         border-right: none;
         padding-right: 0;
