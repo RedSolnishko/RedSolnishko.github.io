@@ -3,26 +3,65 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>Lenni Art</title>
-  <link rel="stylesheet" href="styles/styles.css">
+
+  <meta name="description" content="Арт—пространство для людей, горящих сердец и делом">
+
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия">
+
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/lenni-art.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
+
+  <link rel="stylesheet" href="styles/styles.css?ver=0" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/assets/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+
+  <meta name="msapplication-TileColor" content="#dedede">
+  <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#bc3324">
+
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+
+  <meta name="apple-mobile-web-app-title" content="Lenni Art">
+  <meta name="application-name" content="Lenni Art">
+  <meta name="theme-color" content="#dedede">
+
+  <script src="scripts/jquery.min.js"></script>
 </head>
 
 <body class="body">
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
-        <svg class="page-header__logo-icon" width="202" height="147">
+        <svg class="page-header__logo-img" width="202" height="147">
           <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
+
       <nav class="page-header__nav">
         <a href="events.html" class="page-header__nav-link">Мероприятия</a>
         <a href="event.html" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
-        <a href="sade_page.html" class="page-header__nav-link">Контакты</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
 
         <div class="page-header__nav-user">
           <a href="#" class="page-header__nav-user-link">
@@ -40,18 +79,25 @@
       <div class="page-header__right-block">
         <a href="#" class="page-header__user-btn">
           Войти
-          <svg class="page-header__user-icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.3 9.22C11.8336 8.75813 12.2616 8.18688 12.5549 7.54502C12.8482 6.90316 13 6.20571 13 5.5C13 4.17392 12.4732 2.90215 11.5355 1.96447C10.5979 1.02678 9.32608 0.5 8 0.5C6.67392 0.5 5.40215 1.02678 4.46447 1.96447C3.52678 2.90215 3 4.17392 3 5.5C2.99999 6.20571 3.1518 6.90316 3.44513 7.54502C3.73845 8.18688 4.16642 8.75813 4.7 9.22C3.30014 9.85388 2.11247 10.8775 1.27898 12.1685C0.445495 13.4596 0.00147185 14.9633 0 16.5C0 16.7652 0.105357 17.0196 0.292893 17.2071C0.48043 17.3946 0.734784 17.5 1 17.5C1.26522 17.5 1.51957 17.3946 1.70711 17.2071C1.89464 17.0196 2 16.7652 2 16.5C2 14.9087 2.63214 13.3826 3.75736 12.2574C4.88258 11.1321 6.4087 10.5 8 10.5C9.5913 10.5 11.1174 11.1321 12.2426 12.2574C13.3679 13.3826 14 14.9087 14 16.5C14 16.7652 14.1054 17.0196 14.2929 17.2071C14.4804 17.3946 14.7348 17.5 15 17.5C15.2652 17.5 15.5196 17.3946 15.7071 17.2071C15.8946 17.0196 16 16.7652 16 16.5C15.9985 14.9633 15.5545 13.4596 14.721 12.1685C13.8875 10.8775 12.6999 9.85388 11.3 9.22ZM8 8.5C7.40666 8.5 6.82664 8.32405 6.33329 7.99441C5.83994 7.66476 5.45542 7.19623 5.22836 6.64805C5.0013 6.09987 4.94189 5.49667 5.05764 4.91473C5.1734 4.33279 5.45912 3.79824 5.87868 3.37868C6.29824 2.95912 6.83279 2.6734 7.41473 2.55764C7.99667 2.44189 8.59987 2.5013 9.14805 2.72836C9.69623 2.95542 10.1648 3.33994 10.4944 3.83329C10.8241 4.32664 11 4.90666 11 5.5C11 6.29565 10.6839 7.05871 10.1213 7.62132C9.55871 8.18393 8.79565 8.5 8 8.5ZM19.71 6.13C19.617 6.03627 19.5064 5.96188 19.3846 5.91111C19.2627 5.86034 19.132 5.8342 19 5.8342C18.868 5.8342 18.7373 5.86034 18.6154 5.91111C18.4936 5.96188 18.383 6.03627 18.29 6.13L16.29 8.13L15.67 7.5C15.577 7.40627 15.4664 7.33188 15.3446 7.28111C15.2227 7.23034 15.092 7.2042 14.96 7.2042C14.828 7.2042 14.6973 7.23034 14.5754 7.28111C14.4536 7.33188 14.343 7.40627 14.25 7.5C14.0637 7.68736 13.9592 7.94081 13.9592 8.205C13.9592 8.46919 14.0637 8.72264 14.25 8.91L15.59 10.25C15.7774 10.4363 16.0308 10.5408 16.295 10.5408C16.5592 10.5408 16.8126 10.4363 17 10.25L19.67 7.58C19.771 7.48932 19.8524 7.37904 19.9094 7.25588C19.9664 7.13272 19.9977 6.99924 20.0014 6.86359C20.0052 6.72794 19.9813 6.59294 19.9312 6.46682C19.8811 6.34071 19.8058 6.22611 19.71 6.13Z" fill="#1f1e1e" />
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
           </svg>
         </a>
 
         <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
 
       </div>
+
     </div>
+
   </header>
 
   <main class="main">
+    <div class="breadscrumbs">
+      <a href="#" class="breadscrumbs__link">Главная</a>
+      <a href="#" class="breadscrumbs__link">Раздел</a>
+      <a href="#" class="breadscrumbs__link">Страница раздела</a>
+    </div>
     <article class="event">
       <header class="event__header">
 
@@ -64,7 +110,7 @@
           </div>
 
           <picture class="event__picture">
-            <img src="assets/images/events/sade.jpg" alt="The Best of Sade" class="event__image">
+            <img src="assets/images/sade.jpg" alt="The Best of Sade" class="event__image">
           </picture>
 
           <div class="event__info">
@@ -115,7 +161,7 @@
 
 
         </div>
-        <form class="reserve @@class">
+        <form class="reserve event__reserve">
           <div class="reserve__checks">
             <h4 class="reserve__section-title reserve__section-title--mb30">
               Забронировать столик
@@ -361,7 +407,6 @@
 
                 </svg>
               </div>
-
             </div>
           </div>
 
@@ -397,7 +442,7 @@
               <div class="reserve__note reserve__note--booked">забронировано</div>
             </div>
           </div>
-          <!-- <script src="scripts/main.js"></script> -->
+          <script src="scripts/main.js"></script>
         </form>
 
       </div>
@@ -451,7 +496,7 @@
         </picture>
       </div>
 
-      <h4 class="page-footer__copyright">© Millennials 2025</h4>
+      <h4 class="page-footer__copyright">© Millennials 2022</h4>
 
       <div class="page-footer__other">
         <a href="#" class="page-footer__other-policy link">Политика конфиденциальности</a>
@@ -471,135 +516,133 @@
 
   </footer>
 
-  <div class="pp" id="eventPP">
-    <div class="pp__wrapper">
+  <div class="pp" id="js-eventPP">
+    <div class="pp__container">
       <div class="pp__sticky-close">
-        <button class="pp__x-btn x-btn">
-          <svg class="x-btn__icon" width="12" height="12">
-            <use xlink:href="assets/icons/symbols.svg#fi_x"></use>
+        <button type="button" class="pp__sticky-btn js-ppCloseBtn">
+          <svg class="pp__btn-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
         </button>
       </div>
-
-      <div class="pp__container">
-        <h2 class="pp__title">Заполните форму
+      <div class="pp__wrapper">
+        <h3 class="pp__title">
+          Заполните форму
           <br />и мы подберем площадку
-        </h2>
-        <form class="pp__form form">
+        </h3>
+        <form class="pp__form form" id="js-eventForm">
           <div class="form__list">
-
             <div class="form__field form__field--w50 field">
-              <h6 class="field__title">Формат мероприятия</h6>
-              <div class="radio">
-                <label class="radio__item">
-                  <input class="radio__input" type="radio" name="format" value="seminar" checked>
+              <h6 class="field__title">
+                Формат мероприятия:
+              </h6>
+              <div class="field__radio radio">
+                <label class="radio__label">
+                  <input type="radio" name="format" value="seminar" class="radio__input" checked="checked" />
                   <span class="radio__mark"></span>
-                  <span class="radio__label">Мастер-класс/семинар</span>
+                  <span class="radio__name">Мастер-класс/семинар</span>
                 </label>
-
-                <label class="radio__item">
-                  <input class="radio__input" type="radio" name="format" value="concert">
+                <label class="radio__label">
+                  <input type="radio" name="format" value="concert" class="radio__input" />
                   <span class="radio__mark"></span>
-                  <span class="radio__label">Концерт/выступление</span>
+                  <span class="radio__name">Концерт/выступление</span>
                 </label>
-
-                <label class="radio__item">
-                  <input class="radio__input" type="radio" name="format" value="exhibition">
+                <label class="radio__label">
+                  <input type="radio" name="format" value="show" class="radio__input" />
                   <span class="radio__mark"></span>
-                  <span class="radio__label">Выставка/показ</span>
+                  <span class="radio__name">Выставка/показ</span>
                 </label>
-
-                <label class="radio__item">
-                  <input class="radio__input" type="radio" name="format" value="another">
+                <label class="radio__label">
+                  <input type="radio" name="format" value="other" class="radio__input" />
                   <span class="radio__mark"></span>
-                  <span class="radio__label">Другое</span>
+                  <span class="radio__name">Другое</span>
                 </label>
               </div>
             </div>
-
-            <div class="form__group form__group--w50">
-              <label class="form__field form__field--mb30 field">
-                <span class="field__title">Планируемое количество посетителей:</span>
-                <select class="field__select" name="amount">
+            <div class="form__group">
+              <div class="form__field form__field--mb30 field">
+                <h6 class="field__title">Планируемое количество посетителей:</h6>
+                <select name="amount" class="field__select js-selectric">
                   <option value="20">до 20 человек</option>
                   <option value="100">от 20 до 100 человек</option>
                   <option value="500">от 100 до 500 человек</option>
-                  <option value="1000">более 500 человек</option>
+                  <option value="501">более 500 человек</option>
                 </select>
-              </label>
+              </div>
 
-              <div class="form__field field">
-                <h6 class="field__title">
-                  Дата проведения
-                </h6>
+              <div class="form__field field js-dateField">
+                <h6 class="field__title">Дата проведения:</h6>
                 <div class="field__date">
                   <div class="field__date-inputs">
-                    <input type="text" class="field__date-input" placeholder="дд" readonly>
-                    <input type="text" class="field__date-input" placeholder="мм" readonly>
-                    <input type="text" class="field__date-input field__date-input--w110" placeholder="гггг" readonly>
+                    <input class="field__date-input js-dateDay" type="text" placeholder="ДД" readonly />
+                    <input class="field__date-input js-dateMonth" type="text" placeholder="ММ" readonly />
+                    <input class="field__date-input field__date-input--year js-dateYear" type="text" placeholder="ГГГГ" readonly />
                   </div>
+                  <input class="field__date-picker js-dateInput" type="text" name="date" readonly required />
                 </div>
               </div>
             </div>
           </div>
-
           <div class="form__section">
-            <h6 class="form__title">Контактные данные</h6>
-            <div class="form__list">
-              <label class="form__field form__field--w50 field ">
-                <span class="field__label">Имя*</span>
-                <input class="field__input" type="text" placeholder="Имя" name="name" required>
+            <h6 class="field__title">
+              Контактные данные:
+            </h6>
+            <div class="form__list form__list--mb50">
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">
+                  Имя*
+                </span>
+                <input type="text" class="field__input" placeholder="Имя" name="name" required />
               </label>
-
-              <label class="form__field form__field--w50 field ">
-                <span class="field__label">Фамилия*</span>
-                <input class="field__input" type="text" placeholder="Фамилия" name="Фамилия" required>
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">
+                  Фамилия*
+                </span>
+                <input type="text" class="field__input" placeholder="Фамилия" name="lastname" required />
               </label>
-
-              <label class="form__field form__field--w50 field ">
-                <span class="field__label">Телефон*</span>
-                <input class="field__input" type="tel" placeholder="Телефон" name="телефон" required>
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">
+                  Телефон*
+                </span>
+                <input type="tel" class="field__input js-mobileMask" placeholder="+7()___ __ __" name="phone" required />
               </label>
-
-              <label class="form__field form__field--w50 field ">
-                <span class="field__label">Email*</span>
-                <input class="field__input" type="tel" placeholder="Email" name="email" required>
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">
+                  Email*
+                </span>
+                <input type="email" class="field__input" placeholder="Email" name="email" required />
               </label>
-
             </div>
 
+            <label class="form__field form__field--mb30 field">
+              <span class="field__label field__label--textares">
+                Есть пожелания? Напишите нам:
+              </span>
+              <textarea class="field__textarea" name="wish"></textarea>
+            </label>
 
 
 
+            <label class="form__check form__check--mb40 check">
+              <input type="checkbox" class="check__input" name="agree" required />
+              <span class="check__mark"></span>
+              <span class="check__label"> Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных </span>
+              <span class="error-message"></span>
+            </label>
 
 
 
+            <div class="form__btns">
+              <button type="submit" class="form__btn btn">Отправить</button>
+              <button type="button" class="form__close-btn btn js-ppCloseBtn">Закрыть</button>
+            </div>
 
           </div>
-
-          <label class=" form__field form__field--mb30 field">
-            <span class="field__title">Есть пожелания? Напишите нам:</span>
-            <textarea class="field__textarea" name="Пожелания"></textarea>
-          </label>
-
-          <label class="check">
-            <input type="checkbox" name="agree" class="check__input" required checked />
-            <span class="check__mark"></span>
-            <span class="check__label check__label--s">
-              Я соглашаюсь с пользовательским соглашением и с политикой
-              использования персональных данных
-            </span>
-          </label>
-
-          <div class="form__btns">
-            <button type="submit" class="form__btn btn">Отправить</button>
-            <button type="button" class="form__btn-close">Закрыть</button>
-          </div>
-
         </form>
       </div>
     </div>
   </div>
+
 
 
 

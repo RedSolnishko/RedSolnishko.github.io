@@ -1,10 +1,11 @@
-.container() {
+.container {
     box-sizing: border-box;
-    margin: 0 auto;
+    width: 100%;
     max-width: 1414px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 40px;
     padding-right: 40px;
-    width: 100%;
 
     @media @bw1340 {
       padding-left: 30px;
@@ -16,7 +17,15 @@
     }
   }
 
-  .width_624 {
+  .display-none {
+    display: none;
+  }
+
+  .color-red {
+    color: @red;
+  }
+
+  .width_624{
     box-sizing: border-box;
     width: 100%;
     max-width: 624px;
@@ -26,19 +35,53 @@
     @media @bw1340 {
       max-width: 566px;
     }
-  }  
+  }
 
-.is-hidden() {
-  position: absolute !important;
-  width: 0 !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  clip-path: inset(100%) !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-}
+  .is-hidden{
+    position: absolute !important; 
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+  }
+
+  .show-nav {
+    body {
+      @media @bw1020 {
+        overflow: hidden;
+      }
+    }
+    .page-header__nav {
+      @media @bw1020 {
+        transform: translateX(0);
+      }
+    }
+    .page-header__nav-toggle {
+      &::before {
+        transform: translate(0px, 6px) rotate(45deg);
+        box-shadow: none;
+      }
+      &::after {
+        transform: translate(0px, -6px) rotate(-45deg);
+      }
+    }
+  }
+
+  .show-event-popup{
+    body{
+      overflow: hidden;
+    }
+
+    #js-eventPP{
+      display: flex;
+    }
+  }
+
+  .pp-overflow{
+    overflow: hidden;
+  }

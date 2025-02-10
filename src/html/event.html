@@ -6,6 +6,7 @@
         @@include('blocks/page-header.html')
 
         <main class="main">
+          @@include('blocks/breadscrumbs.html')
           <article class="event">
             <header class="event__header">
 
@@ -18,7 +19,7 @@
                 </div>
 
                 <picture class="event__picture">
-                  <img src="assets/images/events/sade.jpg" alt="The Best of Sade" class="event__image">
+                  <img src="assets/images/sade.jpg" alt="The Best of Sade" class="event__image">
                 </picture>
 
                 <div class="event__info">
@@ -69,7 +70,7 @@
 
 
               </div>
-              @@include('blocks/reserve.html')
+              @@include('blocks/reserve.html', {"class": "event__reserve"})
             </div>
 
 
